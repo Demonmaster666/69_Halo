@@ -55,7 +55,7 @@ with col_center2:
     st.title("🌐 Website Audit Tool")
     st.markdown(
         """
-        <p style='text-align: center;'>Enter a URL below to perform a quick audit of its performance, security, and basic SEO.</p>
+        <p>Enter a URL below to perform a quick audit of its performance, security, and basic SEO.</p>
         """,
         unsafe_allow_html=True
     )
@@ -353,4 +353,5 @@ if analyze_button:
                     st.dataframe(seo_data["images_without_alt"])
             else:
                 st.success("✅ All images have alt text. Good for accessibility and SEO!")
+
 
